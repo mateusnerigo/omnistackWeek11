@@ -1,0 +1,7 @@
+- Criar pasta do projeto
+- Criar pasta backend
+- Entrar no backend e executar 'npm init -y'
+- rodar 'npm install express'
+- criar index.js
+
+- Voltar à raiz e executar 'npx create-react-app frontend'
