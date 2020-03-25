@@ -1,7 +1,79 @@
+OmnistackWeek 11 (anotações)
+
 - Criar pasta do projeto
 - Criar pasta backend
 - Entrar no backend e executar 'npm init -y'
 - rodar 'npm install express'
-- criar index.js
+- criar index.js dentro da pasta src
 
 - Voltar à raiz e executar 'npx create-react-app frontend'
+
+(npX executa um pacote ao invés de instalar)
+
+backend
+abrir index.js
+antes das rotas. permite que o formato json seja lido
+'app.use(express.json());'
+
+get => busca uma informação
+post => cria uma informação
+put => altera uma informação
+delete => deleta uma informação
+
+Tipos de parametros
+Query => nomeados enviados na rota (filtros, paginacao) - get
+route => identificam recursos
+request body => corpo da req, cria ou altera recursos
+
+definir rotas get, post, put e delete no routes.js e exportar
+importar no index.js
+instalar nodemon com 
+'npm install nodemon -d'
+definir script "start" : "nodemon <<caminho>> " no package.json
+
+
+instalar knexJs
+'npm install knex'
+'npm install sqlite3'
+'npx knex init'
+
+alterar em knexfile.js o filename para 
+'./src/database/db.sqlite'
+criar pasta migrations em 'src/database'
+adicionar, depois de connection,
+'migrations' contendo 'directory: <<caminho para a pasta migrations>>
+adicionar em seguida 'useNullAsDefault: true'
+
+Definir entidades
+- ONG
+- Casos
+
+Funcionalidades das entidades
+- ONG [
+    Login
+    Cadastro
+    Logout
+    Cadastrar Casos
+    Listar Casos específicos
+    Deletar Casos
+    Mobile [
+        Listar Casos 
+        Entrar em Contato
+    ]
+]
+
+criar migration com o comando
+'npx knex migrate:make <<tabela a ser criada>>
+
+rodar uma tabela
+'npx knex migrate:latest'
+
+desfazer ultima migration
+'npx knex migrate:rollback'
+
+...lá no routes.js
+crypto gera um randomBytes e joga pro id
+
+criar connection.js em 'src/database' e habilitar o uso da configuração de desenvolvimento
+'const connection = knex(configuration.development);'
+
