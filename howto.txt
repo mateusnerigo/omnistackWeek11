@@ -101,3 +101,26 @@ expo install expo-mail-composer
 
 instalar INTL quando não existir, geralmente react-native
 npm install intl
+
+Instalar Celebrate para validações (Joi)
+npm install Celebrate
+
+Instalar Jest
+Testes automatizados
+npm install Jest
+
+Rodar Jest
+npx jest --init
+
+Instalar Cross
+npm install cross-env
+
+Instalar Supertest
+npm install supertest -D
+
+Deploy
+- Node
+-- Heroku
+-- Digital Ocean
+- React/FrontEnd
+-- netlify
