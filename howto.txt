@@ -77,3 +77,27 @@ crypto gera um randomBytes e joga pro id
 criar connection.js em 'src/database' e habilitar o uso da configuração de desenvolvimento
 'const connection = knex(configuration.development);'
 
+instalar react icons
+npm install react-icons
+
+instalando expo 
+pasta raiz> npm install -g expo
+
+verificar instalação
+expo -h
+
+executar expo
+expo init mobile
+
+instalar React Navigation
+npm install @react-navigation/native
+expo install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context @react-native-community/masked-view
+
+importar constantes expo
+expo install expo-constants
+
+Para mandar emails, use 
+expo install expo-mail-composer
+
+instalar INTL quando não existir, geralmente react-native
+npm install intl
